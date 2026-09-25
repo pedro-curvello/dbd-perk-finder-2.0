@@ -1,0 +1,94 @@
+{
+  "version": 2,
+  "dgSpecHash": "Okv7womanq0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\prcgb\\source\\repos\\DbdPerkApi\\DbdPerkApi.Server\\DbdPerkApi.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.1\\microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.extensions.ambientmetadata.application\\10.1.0\\microsoft.extensions.ambientmetadata.application.10.1.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.extensions.compliance.abstractions\\10.1.0\\microsoft.extensions.compliance.abstractions.10.1.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.extensions.dependencyinjection.autoactivation\\10.1.0\\microsoft.extensions.dependencyinjection.autoactivation.10.1.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.extensions.diagnostics.exceptionsummarization\\10.1.0\\microsoft.extensions.diagnostics.exceptionsummarization.10.1.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.extensions.http.diagnostics\\10.1.0\\microsoft.extensions.http.diagnostics.10.1.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.extensions.http.resilience\\10.1.0\\microsoft.extensions.http.resilience.10.1.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.extensions.resilience\\10.1.0\\microsoft.extensions.resilience.10.1.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.extensions.servicediscovery\\10.1.0\\microsoft.extensions.servicediscovery.10.1.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.extensions.servicediscovery.abstractions\\10.1.0\\microsoft.extensions.servicediscovery.abstractions.10.1.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.extensions.telemetry\\10.1.0\\microsoft.extensions.telemetry.10.1.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.extensions.telemetry.abstractions\\10.1.0\\microsoft.extensions.telemetry.abstractions.10.1.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\opentelemetry\\1.14.0\\opentelemetry.1.14.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\opentelemetry.api\\1.14.0\\opentelemetry.api.1.14.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\opentelemetry.api.providerbuilderextensions\\1.14.0\\opentelemetry.api.providerbuilderextensions.1.14.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\opentelemetry.exporter.opentelemetryprotocol\\1.14.0\\opentelemetry.exporter.opentelemetryprotocol.1.14.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\opentelemetry.extensions.hosting\\1.14.0\\opentelemetry.extensions.hosting.1.14.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\opentelemetry.instrumentation.aspnetcore\\1.14.0\\opentelemetry.instrumentation.aspnetcore.1.14.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\opentelemetry.instrumentation.http\\1.14.0\\opentelemetry.instrumentation.http.1.14.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\opentelemetry.instrumentation.runtime\\1.14.0\\opentelemetry.instrumentation.runtime.1.14.0.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\polly.core\\8.4.2\\polly.core.8.4.2.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\polly.extensions\\8.4.2\\polly.extensions.8.4.2.nupkg.sha512",
+    "C:\\Users\\prcgb\\.nuget\\packages\\polly.ratelimiting\\8.4.2\\polly.ratelimiting.8.4.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "O pacote 'Microsoft.OpenApi' 2.0.0 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "projectPath": "C:\\Users\\prcgb\\source\\repos\\DbdPerkApi\\DbdPerkApi.Server\\DbdPerkApi.Server.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\prcgb\\source\\repos\\DbdPerkApi\\DbdPerkApi.Server\\DbdPerkApi.Server.csproj",
+      "libraryId": "Microsoft.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "O pacote 'OpenTelemetry.Api' 1.14.0 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-g94r-2vxg-569j",
+      "projectPath": "C:\\Users\\prcgb\\source\\repos\\DbdPerkApi\\DbdPerkApi.Server\\DbdPerkApi.Server.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\prcgb\\source\\repos\\DbdPerkApi\\DbdPerkApi.Server\\DbdPerkApi.Server.csproj",
+      "libraryId": "OpenTelemetry.Api",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "O pacote 'OpenTelemetry.Exporter.OpenTelemetryProtocol' 1.14.0 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-4625-4j76-fww9",
+      "projectPath": "C:\\Users\\prcgb\\source\\repos\\DbdPerkApi\\DbdPerkApi.Server\\DbdPerkApi.Server.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\prcgb\\source\\repos\\DbdPerkApi\\DbdPerkApi.Server\\DbdPerkApi.Server.csproj",
+      "libraryId": "OpenTelemetry.Exporter.OpenTelemetryProtocol",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "O pacote 'OpenTelemetry.Exporter.OpenTelemetryProtocol' 1.14.0 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-mr8r-92fq-pj8p",
+      "projectPath": "C:\\Users\\prcgb\\source\\repos\\DbdPerkApi\\DbdPerkApi.Server\\DbdPerkApi.Server.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\prcgb\\source\\repos\\DbdPerkApi\\DbdPerkApi.Server\\DbdPerkApi.Server.csproj",
+      "libraryId": "OpenTelemetry.Exporter.OpenTelemetryProtocol",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "O pacote 'OpenTelemetry.Exporter.OpenTelemetryProtocol' 1.14.0 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-q834-8qmm-v933",
+      "projectPath": "C:\\Users\\prcgb\\source\\repos\\DbdPerkApi\\DbdPerkApi.Server\\DbdPerkApi.Server.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\prcgb\\source\\repos\\DbdPerkApi\\DbdPerkApi.Server\\DbdPerkApi.Server.csproj",
+      "libraryId": "OpenTelemetry.Exporter.OpenTelemetryProtocol",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>DBD Perk Finder & IA</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #121212; color: #fff; padding: 20px; }
+    h1 { color: #e50914; }
+    input, button, textarea { padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #444; background: #222; color: #fff; }
+    .perk-card { background: #1e1e1e; border-left: 4px solid #ffca28; padding: 15px; margin-bottom: 10px; border-radius: 4px; }
+    .ia-section { background: #181818; border: 1px solid #333; padding: 15px; border-radius: 8px; margin-top: 30px; }
+  </style>
+</head>
+<body>
+
+  <h1>Buscador de Perks - Dead by Daylight</h1>
+  <input type="text" id="searchInput" placeholder="Pesquisar perk (PT ou EN)..." oninput="buscarPerks()">
+
+  <div id="perksList"></div>
+
+  <div class="ia-section">
+    <h2>🤖 Assistente de Build com IA</h2>
+    <textarea id="iaPrompt" rows="3" cols="50" placeholder="Ex: Crie uma build focada em geradores para sobrevivente sem dlc"></textarea><br>
+    <button onclick="pedirAjudaIA()">Pedir recomendação de Build</button>
+    <div id="iaResultado" style="white-space: pre-wrap; margin-top: 10px; color: #64b5f6;"></div>
+  </div>
+
+  <script>
+    // URL da sua API C# (Local ou em Nuvem)
+    const API_URL = "http://localhost:5000/api";
+
+    async function buscarPerks() {
+      const termo = document.getElementById('searchInput').value;
+      const res = await fetch(`${API_URL}/perks?query=${encodeURIComponent(termo)}`);
+      const perks = await res.json();
+
+      const container = document.getElementById('perksList');
+      container.innerHTML = perks.map(p => `
+        <div class="perk-card">
+          <h3>${p.nomePt} <small>(${p.nomeEn})</small></h3>
+          <p><strong>Tipo:</strong> ${p.tipo} - ${p.personagem}</p>
+          <p>${p.descricao}</p>
+        </div>
+      `).join('');
+    }
+
+    async function pedirAjudaIA() {
+      const prompt = document.getElementById('iaPrompt').value;
+      const divResultado = document.getElementById('iaResultado');
+      divResultado.innerText = "Pensando na melhor estratégia...";
+
+      const res = await fetch(`${API_URL}/ia/build-recommendation`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain' },
+        body: prompt
+      });
+
+      const data = await res.json();
+      divResultado.innerText = data.resposta;
+    }
+
+    // Busca inicial ao carregar a página
+    buscarPerks();
+  </script>
+</body>
+</html>

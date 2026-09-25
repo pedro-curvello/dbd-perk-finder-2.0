@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DbdPerkApi.AppHost/DbdPerkApi.AppHost.csproj" />
+  <Project Path="DbdPerkApi.Server/DbdPerkApi.Server.csproj" />
+</Solution>
